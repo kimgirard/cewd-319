@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color .5s;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  /* -- progress bar -- */
+.header {
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	background-color: #f1f1f1;
+  }
+  
+  /* The progress container (grey background) */
+  .progress-container {
+	width: 100%;
+	height: 8px;
+	background: #ccc;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+	height: 8px;
+	background: #4caf50;
+	width: 0%;
+  }
+
+ 
+
+
+/* Header */
+
+#main-header {
+    height: 100vh;
+    background: url(../images/introtiger.jpg)  no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#main-header {
+    line-height: 55px;
+}
+
+hgroup {
+    color: black;
+    text-align: center;
+}
+
+
+#main-header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vmax;
+    letter-spacing: 1px;
+    line-height: 10vmax;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px black;
+}
+
+#main-header h1 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 10vmax;
+    color: #fff;
+    text-shadow: 4px 4px black;
+}
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+  
+/* Section 1: Learn more about tigers */
+
+#tiger-intro {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    background-color: #333;
+    padding: 7% 15%;
+}
+
+p {
+  text-align: justify;
+}
+
+.section-title {
+    font-family: 'Public Sans', sans-serif;
+    
+}
+
+/* Tiger gallery */
+
+/* ================================ */
+  /* ======= CONTAINER INFO ========= */
+  /* ================================ */
+  .tiger-container {
+    margin-bottom: 0;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background:floralwhite;
+    padding: 7% 15%;
+  }
+
+  
+  /* ================================ */
+  /* ======= POST-MODULE INFO ======= */
+  /* ================================ */
+  
+  .post-module {
+    position: relative;
+    z-index: 1;
+    display: block;
+    background: #333;
+    min-width: 320px;
+    max-width: 480px;
+    margin:20px;
+    height: 480px;
+    transition: all 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .post-module:hover .thumbnail img,
+  .hover .thumbnail img {
+    transform: translateY(-100px);
+  }
+  
+  .post-module .thumbnail {
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .post-module .thumbnail img {
+    display: block;
+    width: 100%;
+    transition: all 0.3s linear 0s;
+  }
+
+  .post-module .post-content {
+    position: absolute;
+    bottom: 0;
+    background: #FFFFFF;
+    width: 100%;
+    padding: 5px;
+    transition:all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .post-module .post-content .title {
+    text-align: center;
+    margin: 10px;
+    color: #333333;
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+
+  .post-module .post-content .description {
+    text-align: center;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.8em;
+    padding: 0 20px 20px 20px;
+    max-height:0; 
+    overflow: hidden;
+    opacity:0;
+    transition:all .5s cubic-bezier(0.37, 0.75, 0.61, 1.05) .2s;
+  }
+  
+  .post-module:hover .post-content .description {
+    max-height: 200px; 
+    opacity: 1 !important;
+  }
+
+
+/* Siberian Tiger Page with slideshow */
+
+#siberian-tiger-text {
+
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  background-color: #333;
+  padding: 7% 15%;
+}
+
+.swiper {
+  background: #333;
+  width: 100%;
+  height: 100vh
+}
+
+.swiper-slide {
+
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.siberian-tiger-image {
+
+  background: url(../images/siberiantiger.jpg) no-repeat center center;
+  background-size: cover;
+
+}
+
+.siberian-tiger-image2 {
+
+  background: url(../images/siberiantiger2.jpg) no-repeat center center;
+  background-size: cover;
+
+}
+
+.siberian-tiger-image3 {
+
+  background: url(../images/siberiantiger3.jpg) no-repeat center center;
+  background-size: cover;
+
+}
+
+/* Video section */
+
+.video-container {
+  width:100%;
+  height:100vh;
+  overflow: hidden;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.snow-video-container {
+  width:100%;
+  height:100vh;
+  overflow: hidden;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.bgvid {
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+.tiger-facts-h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 11vmax;
+  letter-spacing: .5vmax;
+  line-height: 15vmax;
+  color:#fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 4px 4px black;
+}
+
+.smvid {
+  width:100%;
+}
+
+/* How to help page */
+
+.contact_header {
+  height: 100vh;
+  background: url(../images/tiger9.jpg) fixed no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vmax;
+    letter-spacing: 1px;
+    line-height: 10vmax;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px black;
+}
+
+#contact-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3vmin;
+  text-transform:none;
+  letter-spacing: 1px;
+  text-align:center;
+  padding: 4vmin 20vmin;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.form_parent {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_parent form {
+  width: 50%;
+}
+
+.form_parent form input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.form_parent form textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+/* Footer section */
+
+.footer {
+  background: black;
+  color: #fff;
+  padding: 4vmin 8vmin;
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+
+
+/* Text Animations */
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-7-28 11:46:23
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+ @-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 600px) {
+
+  .form_parent form {
+    width: 100%;
+  }
+  
+  .video-container {
+    background: url("../images/rainforest-pic.png") no-repeat center center;
+    background-size: cover;
+  }
+
+  .snow-video-container {
+    background: url("../images/snowfall-pic.png") no-repeat center center;
+    background-size: cover;
+  }
+
+  video.bgvid  {
+      display:none;
+      /* if you started with display: none on phone, you would then say display: block to make it visible in tablet view */
+  }
+
+
+
+}
+
+/* For iPhone X */
+
+@media only screen and (max-width: 375px) {
+
+  .form_parent form {
+    width: 100%;
+  }
+  
+
+  .video-container {
+    background: url("../images/rainforest-pic.png") no-repeat center center;
+    background-size: cover;
+  }
+
+  .snow-video-container {
+    background: url("../images/snowfall-pic.png") no-repeat center center;
+    background-size: cover;
+  }
+
+
+  .tiger-facts-h1 {
+
+      font-size: 6vmax;
+
+  }
+
+  video.bgvid  {
+      display:none;
+     
+  }
+
+
+  .siberian-tiger-image {
+
+  background: url(../images/mobile-siberiantiger.png) no-repeat center center;
+  background-size: cover;
+
+}
+
+.siberian-tiger-image2 {
+
+  background: url(../images/mobile-siberiantiger2.png) no-repeat center center;
+  background-size: cover;
+
+}
+
+.siberian-tiger-image3 {
+
+  background: url(../images/mobile-siberiantiger3.png) no-repeat center center;
+  background-size: cover;
+
+}
+
+
+
+
+
+/* === DESKTOP > 980PX === */
+@media only screen and (min-width: 980px) {
+
+  .post-module {
+      flex: 1 20%;
+      margin: 20px;
+  }
+
+
+ 
+} }
